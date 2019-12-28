@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Bookmark landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -13,122 +13,150 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="https://kit.fontawesome.com/37cff6aa80.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  Features
-  Pricing
-  Contact
-  Login
-
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
-
-  Get it on Chrome
-  Get it on Firefox
-
-  Features
-
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
-
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
-
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
-
-  More Info
-
-  Intelligent search
-
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info
-
-  Download the extension
-
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
-
-  Frequently Asked Questions
+  <nav>
+    <img src="images/logo-bookmark.svg" alt="logo">
+    <div class="navlinks">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+      <a href="#" class="btn btn-red">Login</a>
+    </div>
+  </nav>
   
-  Here are some of our FAQs. If you have any other questions you’d like 
-  answered please feel free to email us.
-
-  <!-- Question 1 -->
-  What is Bookmark?
-
-  <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
-  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
-  <!-- Question 2 -->
-  How can I request a new browser?
-
-  <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
-  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
-  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
-  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
-  <!-- Question 3 -->
-  Is there a mobile app?
-
-  <!-- Answer 3 -->
-  Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
-  urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
-  sollicitudin ex et ultricies bibendum.
-
-  <!-- Question 4 -->
-  What about other Chromium browsers?
-
-  <!-- Answer 4 -->
-  Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
-  vitae neque eget nisl gravida pellentesque non ut velit.
-
-  More Info
-
-  35,000+ already joined
-
-  Stay up-to-date with what we’re doing
-
-  Contact Us
-
-  Features
-  Pricing
-  Contact
+  <main class="hero">
+    <div class="hero__headings">
+      <h1>A Simple Bookmark Manager</h1>
+      <p>A clean and simple interface to organize your favourite websites. Open a new 
+        browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="hero__cta">
+          <a href="#" class="btn btn-blue">Get it on Chrome</a>
+          <a href="#" class="btn btn-white">Get it on Firefox</a>
+        </div>
+    </div>
+    <img src="images/illustration-hero.svg" alt="illustration-hero" class="img-fluid">
+  </main>
   
+  <section class="features">
+    <div class="features__headings">
+      <h2>Features</h2>
+      <p>Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.</p>
+    </div>
+    <div class="features__nav">
+      <a href="#" id="bookmarking">Simple Bookmarking</a>
+      <a href="#" id="searching">Speedy Searching</a>
+      <a href="#" id="sharing">Easy Sharing</a>
+    </div>
+
+    <article id="bookmark">
+      <h2>Bookmark in one click</h2>
+      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+        gives you complete control over how you manage your favourite sites.</p>
+      <a href="#" class="btn btn-blue">More Info</a>
+    </article>
+    <article id="search">
+      <h2>Intelligent search</h2>
+      <p>Our powerful search feature will help you find saved sites in no time at all. 
+        No need to trawl through all of your bookmarks.</p>
+      <a href="#" class="btn btn-blue">More Info</a>
+      </article>
+      <article id="share">
+        <h2>Share your bookmarks</h2>
+        <p>Easily share your bookmarks and collections with others. Create a shareable 
+          link that you can send at the click of a button.</p>
+        <a href="#" class="btn btn-blue">More Info</a>
+      </article>
+  </section>
+
+  <section class="download">
+    <div class="download__headings">
+      <h2>Download the extension</h2>
+      <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favourite you’d like us to prioritize.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <img src="images/logo-chrome.svg" alt="chrome logo">
+        <h3>Add to Chrome</h3>
+        <p>Minimum version 62</p>
+        <a href="#" class="btn btn-blue">Add & Install Extension</a>
+      </div>
+  
+      <div class="card">
+        <img src="images/logo-firefox.svg" alt="firefox logo">
+        <h3>Add to Firefox</h3>
+        <p>Minimum version 55</p>
+        <a href="#" class="btn btn-blue">Add & Install Extension</a>
+      </div>
+  
+      <div class="card">
+        <img src="images/logo-opera.svg" alt="opera logo">
+        <h3>Add to Opera</h3>
+        <p>Minimum version 46</p>
+        <a href="#" class="btn btn-blue">Add & Install Extension</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="faq__headings">
+      <h2>Frequently Asked Questions</h2>
+      <p>Here are some of our FAQs. If you have any other questions you’d like 
+        answered please feel free to email us.</p>
+    </div>
+
+    <h4 class="d-flex" id="what-bookmark">What is Bookmark? <img src="images/icon-arrow.svg" alt="dropdown icon"></h4>
+    <p id="is-bookmark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+      justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+
+    <h4 class="d-flex" id="how-browser">How can I request a new browser? <img src="images/icon-arrow.svg" alt="dropdown icon"></h4>
+    <p class="this-browser">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+      Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+      ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+      Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+
+    <h4 class="d-flex" id="mobile-app">Is there a mobile app? <img src="images/icon-arrow.svg" alt="dropdown icon"></h4>
+    <p id="is-mobile-app">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+      urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+      sollicitudin ex et ultricies bibendum.</p>
+
+    <h4 class="d-flex" id="chromium-browsers">What about other Chromium browsers? <img src="images/icon-arrow.svg" alt="dropdown icon"></h4>
+    <p id="yes-chromium-browsers">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+      vitae neque eget nisl gravida pellentesque non ut velit.</p>
+
+    <a href="#" class="btn btn-blue">More Info</a>
+  </section>
+  
+  <section class="cta">
+    <p class="cta__stats">35,000+ already joined</p>
+    <h2 class="cta__heading">Stay up-to-date with what we’re doing</h2>
+    <form action="#">
+      <input type="email" name="email" id="email" placeholder="Enter your email address" aria-label="email address">
+      <input type="submit" value="Contact Us" class="btn btn-red">
+    </form>
+  </section>
+
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="footer__nav">
+      <img src="images/logo-bookmark.svg" alt="logo">
+      <a href="#">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer__social">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+    
   </footer>
+
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="github.com/mbcod3">Muhammad Bilal</a>.
+  </p>
 </body>
 </html>
