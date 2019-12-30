@@ -66,7 +66,7 @@
     </div>
     <div class="d-flex-column">
 
-      <input type="radio" id="bookmark-radio" class="d-none" checked name="features-tab">
+      <input type="radio" id="bookmark-radio" class="d-none features__radio" checked name="features-tab">
       <article id="bookmark" class="d-none">
         <div class="img-wrap img-wrap--2 mb-4">
           <img src="images/illustration-features-tab-1.svg" alt="illustration-features" class="img-fluid img-80w">
@@ -79,12 +79,12 @@
         </div>
       </article>
 
-      <input type="radio" id="search-radio" class="d-none" name="features-tab">
+      <input type="radio" id="search-radio" class="d-none features__radio" name="features-tab">
       <article id="search" class="d-none">
         <div class="img-wrap img-wrap--2 img-wrap--2--1 mb-4">
           <img src="images/illustration-features-tab-2.svg" alt="illustration-features" class="img-fluid img-80w">
         </div>
-        <div class="containers">
+        <div class="container">
           <h2>Intelligent search</h2>
           <p>Our powerful search feature will help you find saved sites in no time at all. 
             No need to trawl through all of your bookmarks.</p>
@@ -92,12 +92,12 @@
         </div>
       </article>
   
-      <input type="radio" id="share-radio" class="d-none" name="features-tab">
+      <input type="radio" id="share-radio" class="d-none features__radio" name="features-tab">
       <article id="share" class="d-none">
         <div class="img-wrap img-wrap--2 img-wrap--2--1 mb-4">
           <img src="images/illustration-features-tab-3.svg" alt="illustration-features" class="img-fluid img-80w">
         </div>
-        <div class="containers">
+        <div class="container">
           <h2>Share your bookmarks</h2>
           <p>Easily share your bookmarks and collections with others. Create a shareable 
             link that you can send at the click of a button.</p>
@@ -113,17 +113,18 @@
     </div>
   </section>
 
-  <section class="download mt-7 mb-7">
+  <section class="download mt-7 mb-7 container">
     <div class="download__headings">
       <h2>Download the extension</h2>
       <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
         got a favourite you’d like us to prioritize.</p>
     </div>
-    <div class="cards">
+    <div class="cards mt-2">
       <div class="card">
         <img src="images/logo-chrome.svg" alt="chrome logo">
         <h3>Add to Chrome</h3>
         <p>Minimum version 62</p>
+        <img src="images/bg-dots.svg" alt="bg-dots" class="mb-1 mt-1 img-fluid-100">
         <a href="#" class="btn btn-lg">Add & Install Extension</a>
       </div>
   
@@ -131,6 +132,7 @@
         <img src="images/logo-firefox.svg" alt="firefox logo">
         <h3>Add to Firefox</h3>
         <p>Minimum version 55</p>
+        <img src="images/bg-dots.svg" alt="bg-dots" class="mb-1 mt-1 img-fluid-100">
         <a href="#" class="btn btn-lg">Add & Install Extension</a>
       </div>
   
@@ -138,52 +140,81 @@
         <img src="images/logo-opera.svg" alt="opera logo">
         <h3>Add to Opera</h3>
         <p>Minimum version 46</p>
+        <img src="images/bg-dots.svg" alt="bg-dots" class="mb-1 mt-1 img-fluid-100">
         <a href="#" class="btn btn-lg">Add & Install Extension</a>
       </div>
     </div>
   </section>
 
-  <section class="faq">
+  <section class="faq container">
     <div class="faq__headings">
       <h2>Frequently Asked Questions</h2>
       <p>Here are some of our FAQs. If you have any other questions you’d like 
         answered please feel free to email us.</p>
     </div>
 
-    <h4 class="d-flex" id="what-bookmark">What is Bookmark? <img src="images/icon-arrow.svg" alt="dropdown icon"></h4>
-    <p id="is-bookmark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+    <input type="radio" name="faq" id="faq-bookmark" class="d-none faq__radio">
+    <label for="faq-bookmark" class="faq__labels">
+      <h4 class="d-flex" id="what-bookmark">What is Bookmark?
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path class="faq-arrow" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/>
+        </svg>
+      </h4>
+    </label>
+    <p class="d-none">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
       justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
 
-    <h4 class="d-flex" id="how-browser">How can I request a new browser? <img src="images/icon-arrow.svg" alt="dropdown icon"></h4>
-    <p class="this-browser">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+    <input type="radio" name="faq" id="faq-browser" class="d-none faq__radio">
+    <label for="faq-browser" class="faq__labels">
+      <h4 class="d-flex" id="how-browser">How can I request a new browser?
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path class="faq-arrow" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/>
+        </svg>
+      </h4>
+    </label>
+    <p class="d-none">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
       Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
       ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
       Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
 
-    <h4 class="d-flex" id="mobile-app">Is there a mobile app? <img src="images/icon-arrow.svg" alt="dropdown icon"></h4>
-    <p id="is-mobile-app">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+    <input type="radio" name="faq" id="faq-mobile" class="d-none faq__radio">
+    <label for="faq-mobile" class="faq__labels">
+      <h4 class="d-flex" id="mobile-app">Is there a mobile app?
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path class="faq-arrow" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/>
+        </svg>
+      </h4>
+    </label>
+    <p class="d-none">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
       urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
       sollicitudin ex et ultricies bibendum.</p>
 
-    <h4 class="d-flex" id="chromium-browsers">What about other Chromium browsers? <img src="images/icon-arrow.svg" alt="dropdown icon"></h4>
-    <p id="yes-chromium-browsers">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+    <input type="radio" name="faq" id="faq-chromium" class="d-none faq__radio">
+    <label for="faq-chromium" class="faq__labels">
+      <h4 class="d-flex" id="chromium-browsers">What about other Chromium browsers?
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12"><path class="faq-arrow" fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/>
+        </svg>
+      </h4>
+    </label>
+    <p class="d-none">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
       vitae neque eget nisl gravida pellentesque non ut velit.</p>
+    <p class="faq__line"></p>
 
     <a href="#" class="btn">More Info</a>
   </section>
   
-  <section class="cta mt-7 pt-2 pb-2">
-    <p class="cta__stats">35,000+ already joined</p>
-    <h2 class="cta__heading">Stay up-to-date with what we’re doing</h2>
-    <form action="#">
-      <input type="email" name="email" id="email" placeholder="Enter your email address" aria-label="email address">
-      <input type="submit" value="Contact Us" class="btn btn-red">
-    </form>
+  <section class="cta mt-7 pt-2 pb-3">
+    <div class="container">
+      <p class="cta__stats">35,000+ already joined</p>
+      <h2 class="cta__heading">Stay up-to-date with what we’re doing</h2>
+      <form action="#" class="d-flex-column">
+        <input type="email" name="email" id="email" placeholder="Enter your email address" aria-label="email address" class="cta__email" required>
+        <input type="submit" value="Contact Us" class="btn btn-red cta__submit">
+      </form>
+    </div>
   </section>
 
-  <footer class="d-flex-column pt-2 pb-2">
+  <footer class="d-flex-column pt-3 pb-3">
     <div class="footer__nav d-flex-column">
-      <img src="images/logo-bookmark.svg" alt="logo">
+      <img src="images/logo-bookmark-footer.svg" alt="logo" class="mb-3">
+      
       <a href="#">Features</a>
       <a href="#">Pricing</a>
       <a href="#">Contact</a>
