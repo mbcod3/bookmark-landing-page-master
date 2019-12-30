@@ -17,62 +17,77 @@
 </head>
 <body>
 
-  <nav>
+  <nav class="d-flex container mt-2">
     <img src="images/logo-bookmark.svg" alt="logo">
+
+    <input type="checkbox" id="burger-menu">
+    <label class="mob-menu" for="burger-menu">
+      <span class="nav-icon"></span>
+    </label>
     <div class="navlinks">
+      <img src="images/logo-bookmark-nav.svg" alt="logo" class="d-none mob-logo">
       <a href="#">Features</a>
       <a href="#">Pricing</a>
       <a href="#">Contact</a>
-      <a href="#" class="btn btn-red">Login</a>
+      <a href="#" class="btn btn-red btn-lg login">Login</a>
+      <div class="navlinks__social d-none">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
     </div>
   </nav>
   
-  <main class="hero">
-    <div class="hero__headings">
-      <h1>A Simple Bookmark Manager</h1>
-      <p>A clean and simple interface to organize your favourite websites. Open a new 
-        browser tab and see your sites load instantly. Try it for free.</p>
-        <div class="hero__cta">
-          <a href="#" class="btn btn-blue">Get it on Chrome</a>
+  <main class="hero mt-3 mb-7">
+    <div class="container">
+      <img src="images/illustration-hero.svg" alt="illustration-hero" class="img-fluid">
+      <div class="hero__headings">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.</p>
+        <div class="hero__cta mt-3">
+          <a href="#" class="btn mr-1">Get it on Chrome</a>
           <a href="#" class="btn btn-white">Get it on Firefox</a>
         </div>
+      </div>
     </div>
-    <img src="images/illustration-hero.svg" alt="illustration-hero" class="img-fluid">
   </main>
   
   <section class="features">
-    <div class="features__headings">
+    <div class="features__headings container">
       <h2>Features</h2>
       <p>Our aim is to make it quick and easy for you to access your favourite websites. 
         Your bookmarks sync between your devices so you can access them on the go.</p>
     </div>
-    <div class="features__nav">
+    <div class="features__nav d-flex-column mb-3 container">
       <a href="#" id="bookmarking">Simple Bookmarking</a>
       <a href="#" id="searching">Speedy Searching</a>
       <a href="#" id="sharing">Easy Sharing</a>
     </div>
 
     <article id="bookmark">
+      <img src="images/illustration-features-tab-1.svg" alt="illustration-features" class="img-fluid">
       <h2>Bookmark in one click</h2>
       <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
         gives you complete control over how you manage your favourite sites.</p>
-      <a href="#" class="btn btn-blue">More Info</a>
+      <a href="#" class="btn d-none">More Info</a>
     </article>
     <article id="search">
+      <img src="images/illustration-features-tab-2.svg" alt="illustration-features" class="img-fluid">
       <h2>Intelligent search</h2>
       <p>Our powerful search feature will help you find saved sites in no time at all. 
         No need to trawl through all of your bookmarks.</p>
-      <a href="#" class="btn btn-blue">More Info</a>
+      <a href="#" class="btn d-none">More Info</a>
       </article>
       <article id="share">
+        <img src="images/illustration-features-tab-3.svg" alt="illustration-features" class="img-fluid">
         <h2>Share your bookmarks</h2>
         <p>Easily share your bookmarks and collections with others. Create a shareable 
           link that you can send at the click of a button.</p>
-        <a href="#" class="btn btn-blue">More Info</a>
+        <a href="#" class="btn d-none">More Info</a>
       </article>
   </section>
 
-  <section class="download">
+  <section class="download mt-7 mb-7">
     <div class="download__headings">
       <h2>Download the extension</h2>
       <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
@@ -83,21 +98,21 @@
         <img src="images/logo-chrome.svg" alt="chrome logo">
         <h3>Add to Chrome</h3>
         <p>Minimum version 62</p>
-        <a href="#" class="btn btn-blue">Add & Install Extension</a>
+        <a href="#" class="btn btn-lg">Add & Install Extension</a>
       </div>
   
       <div class="card">
         <img src="images/logo-firefox.svg" alt="firefox logo">
         <h3>Add to Firefox</h3>
         <p>Minimum version 55</p>
-        <a href="#" class="btn btn-blue">Add & Install Extension</a>
+        <a href="#" class="btn btn-lg">Add & Install Extension</a>
       </div>
   
       <div class="card">
         <img src="images/logo-opera.svg" alt="opera logo">
         <h3>Add to Opera</h3>
         <p>Minimum version 46</p>
-        <a href="#" class="btn btn-blue">Add & Install Extension</a>
+        <a href="#" class="btn btn-lg">Add & Install Extension</a>
       </div>
     </div>
   </section>
@@ -128,10 +143,10 @@
     <p id="yes-chromium-browsers">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
       vitae neque eget nisl gravida pellentesque non ut velit.</p>
 
-    <a href="#" class="btn btn-blue">More Info</a>
+    <a href="#" class="btn">More Info</a>
   </section>
   
-  <section class="cta">
+  <section class="cta mt-7 pt-2 pb-2">
     <p class="cta__stats">35,000+ already joined</p>
     <h2 class="cta__heading">Stay up-to-date with what we’re doing</h2>
     <form action="#">
@@ -140,8 +155,8 @@
     </form>
   </section>
 
-  <footer>
-    <div class="footer__nav">
+  <footer class="d-flex-column pt-2 pb-2">
+    <div class="footer__nav d-flex-column">
       <img src="images/logo-bookmark.svg" alt="logo">
       <a href="#">Features</a>
       <a href="#">Pricing</a>
