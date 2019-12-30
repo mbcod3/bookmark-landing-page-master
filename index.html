@@ -25,21 +25,27 @@
       <span class="nav-icon"></span>
     </label>
     <div class="navlinks">
-      <img src="images/logo-bookmark-nav.svg" alt="logo" class="d-none mob-logo">
-      <a href="#">Features</a>
-      <a href="#">Pricing</a>
-      <a href="#">Contact</a>
-      <a href="#" class="btn btn-red btn-lg login">Login</a>
-      <div class="navlinks__social d-none">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter"></i>
+      <div class="navlinks__container">
+        <img src="images/logo-bookmark-nav.svg" alt="logo" class="d-none mob-logo">
+        <div class="navlinks__links">
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
+          <a href="#" class="btn btn-red btn-lg login">Login</a>
+        </div>
+        <div class="navlinks__social d-none">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
       </div>
     </div>
   </nav>
   
   <main class="hero mt-3 mb-7">
-    <div class="container">
+    <div class="img-wrap img-wrap--1 mb-3">
       <img src="images/illustration-hero.svg" alt="illustration-hero" class="img-fluid">
+    </div>
+      <div class="container">
       <div class="hero__headings">
         <h1>A Simple Bookmark Manager</h1>
         <p>A clean and simple interface to organize your favourite websites. Open a new 
@@ -58,33 +64,53 @@
       <p>Our aim is to make it quick and easy for you to access your favourite websites. 
         Your bookmarks sync between your devices so you can access them on the go.</p>
     </div>
-    <div class="features__nav d-flex-column mb-3 container">
-      <a href="#" id="bookmarking">Simple Bookmarking</a>
-      <a href="#" id="searching">Speedy Searching</a>
-      <a href="#" id="sharing">Easy Sharing</a>
-    </div>
+    <div class="d-flex-column">
 
-    <article id="bookmark">
-      <img src="images/illustration-features-tab-1.svg" alt="illustration-features" class="img-fluid">
-      <h2>Bookmark in one click</h2>
-      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
-        gives you complete control over how you manage your favourite sites.</p>
-      <a href="#" class="btn d-none">More Info</a>
-    </article>
-    <article id="search">
-      <img src="images/illustration-features-tab-2.svg" alt="illustration-features" class="img-fluid">
-      <h2>Intelligent search</h2>
-      <p>Our powerful search feature will help you find saved sites in no time at all. 
-        No need to trawl through all of your bookmarks.</p>
-      <a href="#" class="btn d-none">More Info</a>
+      <input type="radio" id="bookmark-radio" class="d-none" checked name="features-tab">
+      <article id="bookmark" class="d-none">
+        <div class="img-wrap img-wrap--2 mb-4">
+          <img src="images/illustration-features-tab-1.svg" alt="illustration-features" class="img-fluid img-80w">
+        </div>
+        <div class="container">
+          <h2>Bookmark in one click</h2>
+          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            gives you complete control over how you manage your favourite sites.</p>
+          <a href="#" class="btn d-none">More Info</a>
+        </div>
       </article>
-      <article id="share">
-        <img src="images/illustration-features-tab-3.svg" alt="illustration-features" class="img-fluid">
-        <h2>Share your bookmarks</h2>
-        <p>Easily share your bookmarks and collections with others. Create a shareable 
-          link that you can send at the click of a button.</p>
-        <a href="#" class="btn d-none">More Info</a>
+
+      <input type="radio" id="search-radio" class="d-none" name="features-tab">
+      <article id="search" class="d-none">
+        <div class="img-wrap img-wrap--2 img-wrap--2--1 mb-4">
+          <img src="images/illustration-features-tab-2.svg" alt="illustration-features" class="img-fluid img-80w">
+        </div>
+        <div class="containers">
+          <h2>Intelligent search</h2>
+          <p>Our powerful search feature will help you find saved sites in no time at all. 
+            No need to trawl through all of your bookmarks.</p>
+          <a href="#" class="btn d-none">More Info</a>
+        </div>
       </article>
+  
+      <input type="radio" id="share-radio" class="d-none" name="features-tab">
+      <article id="share" class="d-none">
+        <div class="img-wrap img-wrap--2 img-wrap--2--1 mb-4">
+          <img src="images/illustration-features-tab-3.svg" alt="illustration-features" class="img-fluid img-80w">
+        </div>
+        <div class="containers">
+          <h2>Share your bookmarks</h2>
+          <p>Easily share your bookmarks and collections with others. Create a shareable 
+            link that you can send at the click of a button.</p>
+          <a href="#" class="btn d-none">More Info</a>
+        </div>
+      </article>
+
+      <div class="features__nav d-flex-column mt-2 mb-3 order-first">
+          <label for="bookmark-radio" id="bookmarking"><span>Simple Bookmarking</span></label>
+          <label for="search-radio" id="searching"><span>Speedy Searching</span></label>
+          <label for="share-radio" id="sharing"><span>Easy Sharing</span></label>
+      </div>
+    </div>
   </section>
 
   <section class="download mt-7 mb-7">
