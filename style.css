@@ -278,7 +278,7 @@ h4 {
 }
 
 
-.test2 {
+.full-width-bg {
   margin-right: -600rem;
   border-width: 600rem;
   border-style: solid;
@@ -297,7 +297,7 @@ h4 {
   left: 25%;
   bottom: 0;
   height: 75%;
-  width: 75%;
+  width: 76%;
   background-color: var(--blue);
 }
 
