@@ -571,7 +571,8 @@ h4 {
   background-image: url(images/icon-error.svg);
   background-repeat: no-repeat;
   background-position: right 5% center;
-  border-bottom: 30px solid var(--red) !important;
+  box-shadow: 0 20px 0 0 var(--red);
+  margin-bottom: 2.5rem;
 }
 
 .err-msg {
@@ -581,7 +582,7 @@ h4 {
   font-style: italic;
   font-weight: 500;
   position: absolute;
-  top: 27%;
+  top: 24%;
   left: 18px;
 }
 
@@ -606,8 +607,12 @@ h4 {
     padding-right: 1.5rem !important;
   }
 
+  .input-err {
+    margin-bottom: 0;
+  }
+
   .err-msg {
-    top: 47%;
+    top: 65%;
   }
 }
 
